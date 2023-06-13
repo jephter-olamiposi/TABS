@@ -103,7 +103,7 @@
         border-left: none;
         border-bottom: #14ba86 2px solid ;
     }
-    .job-btn:focus{
+    .active{
         border-left: none;
         border-bottom: #14ba86 2px solid ;
     }
