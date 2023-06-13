@@ -30,10 +30,11 @@
     color: #14ba86;
     border-left: #14ba86 2px solid ;
 }
-.job-btn:focus{
+.active{
     color: #14ba86;
     border-left: #14ba86 2px solid ;
 }
+
 
 .job-info{
     display: flex;

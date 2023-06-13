@@ -30,6 +30,10 @@ const info=[
     }
 ]
 
+let tommy = document.querySelector(".t");
+let bigdrop = document.querySelector(".b");
+let cuker = document.querySelector(".c");
+
 
 document.querySelector('.info').innerHTML = `
 <div class="job-info">
@@ -51,12 +55,9 @@ document.querySelector('.info').innerHTML = `
         </div>
 
     </div>
-</div>`;
+</div>`
+tommy.classList.add('active');
 
-
-let tommy = document.querySelector(".t");
-let bigdrop = document.querySelector(".b");
-let cuker = document.querySelector(".c");
 
 
 
@@ -84,6 +85,10 @@ tommy.addEventListener('click',() => {
 
         </div>
     </div>`;
+    tommy.classList.add('active');
+    bigdrop.classList.remove('active');
+    cuker.classList.remove('active');
+
 
 });
 
@@ -113,6 +118,11 @@ bigdrop.addEventListener('click',() => {
         
             </div>
         </div>`;
+        tommy.classList.remove('active');
+        bigdrop.classList.add('active');
+        cuker.classList.remove('active');
+
+
 
 });
 cuker.addEventListener('click',() => {
@@ -137,6 +147,11 @@ cuker.addEventListener('click',() => {
         
             </div>
         </div>`;
+        tommy.classList.remove('active');
+        bigdrop.classList.remove('active');
+        cuker.classList.add('active');
+
+
 });
 
 
